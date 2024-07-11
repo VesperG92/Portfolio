@@ -9,9 +9,9 @@ body {
 }
 
 .profile-image {
-    width: 200px;
+    width: 80%;
     height: auto;
-    animation: slideIn 1s forwards;
+    animation: slideIn 2s forwards;
 }
 
 @keyframes slideIn {
@@ -25,11 +25,11 @@ body {
 
 .intro-text {
     opacity: 0;
-    animation: fadeIn 4s forwards;
+    animation: fadeIn 5s forwards;
 }
 .intro-subtext {
     opacity: 0;
-    animation: fadeIn 5s forwards;
+    animation: fadeIn 7s forwards;
 }
 
 @keyframes fadeIn {
