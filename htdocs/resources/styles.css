@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.hero {
+    height: 100vh;
+    transition: background-color 0.5s;
+}
+
+.profile-image {
+    width: 200px;
+    height: auto;
+    animation: slideIn 1s forwards;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.intro-text {
+    opacity: 0;
+    animation: fadeIn 4s forwards;
+}
+.intro-subtext {
+    opacity: 0;
+    animation: fadeIn 5s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.dark-mode {
+    background-color: #000;
+    color: #fff;
+}
+
+.dark-mode {
+    background-color: #000;
+    color: #fff;
+}
+
+.dark-mode button {
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.dark-mode .navbar-toggler {
+    border-color: #fff;
+}
+
+.dark-mode .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28%255%2C%255%2C%255%2C 1%29' stroke-width='2' linecap='round' linejoin='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
