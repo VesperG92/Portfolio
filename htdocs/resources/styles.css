@@ -1,16 +1,19 @@
 body {
-    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
     transition: background-color 0.5s, color 0.5s;
 }
 
+.container-fluid{
+    margin: 0;
+    padding: 0;
+}
+
 .hero {
-    height: 100vh;
     transition: background-color 0.5s;
 }
 
 .profile-image {
-    width: 80%;
-    height: auto;
     animation: slideIn 2s forwards;
 }
 
@@ -18,29 +21,22 @@ body {
     from {
         transform: translateX(-100%);
     }
+
     to {
         transform: translateX(0);
     }
 }
 
-.intro-text {
-    opacity: 0;
-    animation: fadeIn 5s forwards;
-}
+.intro-text,
 .intro-subtext {
     opacity: 0;
-    animation: fadeIn 7s forwards;
+    animation: fadeIn 5s forwards;
 }
 
 @keyframes fadeIn {
     to {
         opacity: 1;
     }
-}
-
-.dark-mode {
-    background-color: #000;
-    color: #fff;
 }
 
 .dark-mode {
@@ -60,4 +56,29 @@ body {
 
 .dark-mode .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28%255%2C%255%2C%255%2C 1%29' stroke-width='2' linecap='round' linejoin='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
+
+.typewriter {
+    font-family: Courier, monospace;
+    overflow: hidden;
+    border-right: .15em solid orange;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 80%
+    }
 }
